@@ -1,6 +1,9 @@
 export default async function runFnWithTimeout(fn, timeout = 0, ...fn_args) {
 	if (timeout === 0) {
-		return await fn(...fn_args)
+		return {
+			value: await fn(...fn_args),
+			timeout: false
+		}
 	}
 
 	const timeout_symbol = Symbol()
