@@ -10,7 +10,7 @@ export default async function runFnWithTimeout(fn, timeout = 0, ...fn_args) {
 		timer_id = setTimeout(resolve, timeout, timeout_symbol)
 	})
 
-	const result = await Promise.race([fn(), timer])
+	const result = await Promise.race([fn(...fn_args), timer])
 
 	clearTimeout(timer_id)
 
