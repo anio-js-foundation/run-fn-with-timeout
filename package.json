@@ -1,0 +1,12 @@
+{
+  "name": "@anio-js-core-foundation/run-fn-with-timeout",
+  "version": "1.0.0",
+  "description": "Run a function with a timeout.",
+  "main": "index.mjs",
+  "author": "Anio Software <info@anio.software>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anio-js-core-foundation/run-fn-with-timeout.git"
+  }
+}
