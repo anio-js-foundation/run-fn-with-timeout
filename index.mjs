@@ -4,11 +4,15 @@ export default async function runFnWithTimeout(fn, timeout = 0, ...fn_args) {
 	}
 
 	const timeout_symbol = Symbol()
-	const timer = new Promise(resolve => setTimeout(resolve, timeout, timeout_symbol))
+	let timer_id
+
+	const timer = new Promise(resolve => {
+		timer_id = setTimeout(resolve, timeout, timeout_symbol)
+	})
 
 	const result = await Promise.race([fn(), timer])
 
-	clearTimeout(timer)
+	clearTimeout(timer_id)
 
 	const has_timed_out = result === timeout_symbol
 
