@@ -1,4 +1,4 @@
-import runFnWithTimeout from "./index.mjs"
+import runFnWithTimeout from "./src/index.mjs"
 
 function myFunction() {
 	return new Promise(resolve => {

@@ -1,9 +1,9 @@
-# @anio-js-core-foundation/run-fn-with-timeout
+# @anio-js-foundation/run-fn-with-timeout
 
 Run a function with a timeout.
 
 ```js
-import runFnWithTimeout from "@anio-js-core-foundation/run-fn-with-timeout"
+import runFnWithTimeout from "@anio-js-foundation/run-fn-with-timeout"
 
 function myFunction() {
 	return new Promise(resolve => {
