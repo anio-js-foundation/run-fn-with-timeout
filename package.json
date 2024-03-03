@@ -1,6 +1,6 @@
 {
   "name": "@anio-js-foundation/run-fn-with-timeout",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Run a function with a timeout.",
   "main": "./dist/package.mjs",
   "author": "Anio Software <info@anio.software>",
